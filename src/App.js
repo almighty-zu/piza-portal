@@ -1,13 +1,13 @@
 import React from 'react';
 import {BrowserRouter, Route, Switch} from 'react-router-dom';
 import MainLayout from './components/layout/MainLayout/MainLayout';
-import HomePage from './components/views/Homepage/HomePage';
+import Dashboard from './components/views/Dashboard/Dashboard';
 import Login from './components/views/Login/Login';
 import Tables from './components/views/Tables/Tables';
 import TablesBooking from './components/views/TablesBooking/TablesBooking';
 import TablesEvents from './components/views/TablesEvents/TablesEvents';
 import Waiter from './components/views/Waiter/Waiter';
-import WaiterOrder from './components/views/WaiterOrder/TablesOrder';
+import WaiterOrder from './components/views/WaiterOrder/WaiterOrder';
 import Kitchen from './components/views/Kitchen/Kitchen';
 import { StylesProvider } from '@material-ui/core/styles';
 import { createMuiTheme } from '@material-ui/core/styles';
@@ -28,7 +28,7 @@ function App() {
         <ThemeProvider theme={theme}>
           <MainLayout>
             <Switch>
-              <Route exact path={`${process.env.PUBLIC_URL}/`} component={HomePage} />
+              <Route exact path={`${process.env.PUBLIC_URL}/`} component={Dashboard} />
               <Route exact path={process.env.PUBLIC_URL + '/login'} component={Login} />
               <Route exact path={process.env.PUBLIC_URL + '/kitchen'} component={Kitchen} />
               <Route exact path={process.env.PUBLIC_URL + '/tables'} component={Tables} />

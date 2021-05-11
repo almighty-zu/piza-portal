@@ -1,24 +1,24 @@
-# Dashboard
+# Dashboard - MUI ALMOST DONE
 
- - '/'
-    - statystyki dzisiejszych zamowień (zdalne i lokalne)
-    - lista rezerwacji i eventów na dzisiaj
+ - '/' (address correct)
+    - statystyki dzisiejszych zamowień (zdalne i lokalne) (not yet ready)
+    - lista rezerwacji i eventów na dzisiaj (checked)
 
-# Logowanie
+# Logowanie - MUI DONE
 
-- '/login'
-    - pola na login i hasło 
-    - guzik do zalogowania (link do dashboardu)
+- '/login' (address correct)
+    - pola na login i hasło (checked)
+    - guzik do zalogowania (link do dashboardu) (checked&checked)
 
-# Widok dostępności stolików
+# Widok dostępności stolików - MUI ALMOST DONE 
 
-- '/tables'
-    - wybór daty i godziny
-    - tabela z listą rezerwacji oraz wydarzeń
-        - każda kolumna = 1 stolik
-        - każdy wiersz = 30 minut
-        - ma przypominać widok tygodnia w kalendarzu Google, gdzie w kolumnach zamiast dni są różne stoliki 
-        - po kliklnięciu rezerwacji lub eventu przechodzimy na stronę szczegółów
+- '/tables' (address correct)
+    - wybór daty i godziny (still to implement)
+    - tabela z listą rezerwacji oraz wydarzeń (checked)
+        - każda kolumna = 1 stolik (checked)
+        - każdy wiersz = 30  (checked)
+        - ma przypominać widok tygodnia w kalendarzu Google, gdzie w kolumnach zamiast dni są różne stoliki (hmm?!)
+        - po kliklnięciu rezerwacji lub eventu przechodzimy na stronę szczegółów (checked)
 
 - '/tables/booking/:id'
     - zawiera wszystkie informacje dotyczące rezerwacji 
@@ -34,31 +34,31 @@
     - analogicznie do powyżej, dla eventów, bez początkowych informacji
 
 
-# Widok kelnera
+# Widok kelnera - MUI DONE (visual aspect needs refurbishing)
 
-- '/waiter'
+- '/waiter' (address correct)
     - tabela
-        - w wierszach stoliki
-        - w kolumnach różne rodzaje informacji (status, czas od ostatniej aktywności)
-        - dostępne akcje dla danego stolika
+        - w wierszach stoliki (checked)
+        - w kolumnach różne rodzaje informacji (status, czas od ostatniej aktywności) (checked)
+        - dostępne akcje dla danego stolika (checked)
 
-- '/waiter/order/new'
-    - numer stolika (edytowalny)
-    - menu produktów dostępnych w restauracji
-    - opcje wybranego produktu
-    - zamówienie (zamówione produkty z opcjami i ceną)
-    - kwotę zamówienia
+- '/waiter/order/new' (address correct) - this view in the making.
+    - numer stolika (edytowalny) (checked)
+    - menu produktów dostępnych w restauracji (checked)
+    - opcje wybranego produktu (kinda checked)
+    - zamówienie (zamówione produkty z opcjami i ceną) (kinda checked)
+    - kwotę zamówienia (not yet working, but is thr)
 
-- '/waiter/order/:id'
-    - jak powyższa
+- '/waiter/order/:id' (address correct)
+    - jak powyższa (checked)
 
-# Widok kuchni
+# Widok kuchni - MUI DONE
 
-- '/kitchen'
-    - wyświetla widok zamówień w kolejności ich tworzenia
+- '/kitchen' (address correct)
+    - wyświetla widok zamówień w kolejności ich tworzenia (checked)
     - lista musi zawierać:
-        - numer stolika (lub zamówienia zdalnego) 
-        - pełne informacje dotyczące zamówionych dań
-    - na liście musi być możliwość oznaczenia zamówienia jako zrealizowane
+        - numer stolika (lub zamówienia zdalnego) (checked)
+        - pełne informacje dotyczące zamówionych dań (checked)
+    - na liście musi być możliwość oznaczenia zamówienia jako zrealizowane (checked)
 
 
