@@ -6,14 +6,15 @@ import Login from './components/views/Login/Login';
 import Tables from './components/views/Tables/Tables';
 import TablesBooking from './components/views/TablesBooking/TablesBooking';
 import TablesEvents from './components/views/TablesEvents/TablesEvents';
-import Waiter from './components/views/Waiter/WaiterContainer';
+import Waiter from './components/views/Waiter/WaiterContainer.js';
 import WaiterOrder from './components/views/WaiterOrder/WaiterOrder';
 import Kitchen from './components/views/Kitchen/Kitchen';
 import { StylesProvider } from '@material-ui/core/styles';
 import { createMuiTheme } from '@material-ui/core/styles';
 import { ThemeProvider } from '@material-ui/styles';
-import {Provider} from 'react-redux';
-import store from './redux/store.js';
+
+import { Provider } from 'react-redux';
+import store from './redux/store';
 
 const theme = createMuiTheme({
   palette:

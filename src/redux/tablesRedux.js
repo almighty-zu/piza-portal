@@ -1,6 +1,7 @@
 import Axios from 'axios';
 import { api } from '../settings';
 
+
 /* selectors */
 export const getAll = ({tables}) => tables.data;
 export const getLoadingState = ({tables}) => tables.loading;
@@ -70,4 +71,3 @@ export default function reducer(statePart = [], action = {}) {
       return statePart;
   }
 }
-
